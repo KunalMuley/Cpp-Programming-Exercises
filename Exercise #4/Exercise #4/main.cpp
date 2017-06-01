@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     int numb[5];
-    for(int i=0;i<3;i++)
+    for(int i=0;i<3;i++)  //Getting input of three integers from the user.
     {
       cout << "Please enter integer number "<<i+1<<endl;
       cin>>numb[i];
@@ -14,7 +14,7 @@ int main()
     int temp1=0;
     int largest2,largest3,temp2,temp3;
 
-    for(int j=0;j<3;j++)
+    for(int j=0;j<3;j++)  //Loop to find the largest number among three numbers.
     {
         if(numb[j]>largest1)
         {
@@ -31,7 +31,7 @@ int main()
       largest2=numb[temp1-1];
     }
 
-    for(int k=0;k<3;k++)
+    for(int k=0;k<3;k++)  //Loop to find the second largest number among three numbers.
     {
         if(k!=temp1)
         {
@@ -43,7 +43,7 @@ int main()
         }
     }
 
-    for(int l=0;l<3;l++)
+    for(int l=0;l<3;l++)  //Loop to find the third number.
     {
         if(l!=temp1 && l!=temp2)
         {
